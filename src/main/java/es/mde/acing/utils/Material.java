@@ -8,5 +8,11 @@ public class Material {
 		this.id = id;
 		this.nombre = nombre;
 	}
+
+	@Override
+	public String toString() {
+		return "Material [id=" + id + ", nombre=" + nombre + "]";
+	}
+	
 	
 }
