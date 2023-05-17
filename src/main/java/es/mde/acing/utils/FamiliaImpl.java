@@ -1,28 +1,9 @@
 package es.mde.acing.utils;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-
-import org.hibernate.validator.constraints.UniqueElements;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 
-
-public class FamiliaImpl extends es.mdef.support.Familia {
+public class FamiliaImpl {
 	
 	private Long id;
 	
@@ -33,10 +14,9 @@ public class FamiliaImpl extends es.mdef.support.Familia {
 	
 	List<Pregunta> preguntas;	
 	
+String enunciado;
 
-//     getEnunciado()  y setEnunciado()
-//     Los heredeamos de la superclase (libreria)  
-//    
+
 	public Long getId() {
 		return id;
 	}
@@ -49,6 +29,19 @@ public class FamiliaImpl extends es.mdef.support.Familia {
 	public List<Pregunta> getPreguntas() {
 		return preguntas;
 	}
+
+	
+	
+	
+	public String getEnunciado() {
+		return enunciado;
+	}
+
+
+	public void setEnunciado(String enunciado) {
+		this.enunciado = enunciado;
+	}
+
 
 	public void setPreguntas(List<Pregunta> preguntas) {
 		this.preguntas = preguntas;
