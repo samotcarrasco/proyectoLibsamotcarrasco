@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 
 
-public class Usuario {
+public class UsuarioL {
 	//private static final long serrialVersionUID = 1L;
 	public static enum Rol {
 		Administrator,
@@ -25,7 +25,7 @@ public class Usuario {
 	private boolean enabled = true;
 	
 	
-	List<Pregunta> preguntas;
+	List<PreguntaL> preguntas;
 	
 	public Long getId() {
 		return id;
@@ -70,11 +70,11 @@ public class Usuario {
 //	}
 	
 	
-	public List<Pregunta> getPreguntas() {
+	public List<PreguntaL> getPreguntas() {
 		return preguntas;
 	}
 
-	public void setPreguntas(List<Pregunta> preguntas) {
+	public void setPreguntas(List<PreguntaL> preguntas) {
 		this.preguntas = preguntas;
 	}
 

@@ -1,10 +1,10 @@
 package es.mde.acing.utils;
 
-public class Pregunta {
+public class PreguntaL {
 	
 	private Long id;
 	private String enunciado;
-	private Usuario usuario;	
+	private UsuarioL usuario;	
 
 	private FamiliaImpl familia;
 
@@ -22,10 +22,10 @@ public class Pregunta {
 		this.enunciado = enunciado;
 	}
 	
-	public Usuario getUsuario() {
+	public UsuarioL getUsuario() {
 		return usuario;
 	}
-	public void setUsuario(Usuario usuario) {
+	public void setUsuario(UsuarioL usuario) {
 		this.usuario = usuario;
 	}
 	

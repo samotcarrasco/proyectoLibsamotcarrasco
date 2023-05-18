@@ -2,7 +2,7 @@ package es.mde.acing.utils;
 
 
 
-public class Administrador extends Usuario {
+public class AdministradorL extends UsuarioL {
 	
 	private String telefono;
 	

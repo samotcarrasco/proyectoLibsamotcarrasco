@@ -12,7 +12,7 @@ public class FamiliaImpl {
 	// lo controlamos en el ORM, comprobado el funcionamiento
 	
 	
-	List<Pregunta> preguntas;	
+	List<PreguntaL> preguntas;	
 	
 String enunciado;
 
@@ -26,7 +26,7 @@ String enunciado;
 		this.id = id;
 	}
 
-	public List<Pregunta> getPreguntas() {
+	public List<PreguntaL> getPreguntas() {
 		return preguntas;
 	}
 
@@ -43,7 +43,7 @@ String enunciado;
 	}
 
 
-	public void setPreguntas(List<Pregunta> preguntas) {
+	public void setPreguntas(List<PreguntaL> preguntas) {
 		this.preguntas = preguntas;
 	}
 	

@@ -1,7 +1,7 @@
 package es.mde.acing.utils;
 
 
-public class NoAdministrador extends Usuario {
+public class NoAdministradorL extends UsuarioL {
 	public static enum Dpto {
 		EMIES,
 	    CCESP	
