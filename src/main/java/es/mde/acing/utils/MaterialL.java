@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public class MaterialL{
+public class MaterialL implements IMaterial{
 	private static final long serrialVersionUID = 1L;
 	public static enum TipoMaterial {
 		Inventariable,

@@ -15,7 +15,7 @@ import jakarta.validation.constraints.NotNull;
 
 
 
-public class DepartamentoL {
+public class DepartamentoL implements IDepartamento {
 	
 	public static enum TipoAcuartelamiento {
 		ACING
