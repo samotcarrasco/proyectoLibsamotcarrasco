@@ -5,7 +5,7 @@ import java.util.List;
 
 
 
-public class CategoriaImpl implements Categoria{
+public class CategoriaImpl {
 	
 	public static enum TipoGrupo {
 		Informatica,
@@ -24,27 +24,25 @@ public class CategoriaImpl implements Categoria{
 	private int maxMilis;
 
 	
-	@Override
+	////@Override
 	public String getCategoria() {
 		return categoria;
 	}
 
-	@Override
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
 
-	@Override
+	//@Override
 	public String getDescripcion() {
 		return descripcion;
 	}
 
-	@Override
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
 
-	@Override
+	//@Override
 	public TipoGrupo getGrupo() {
 		return grupo;
 	}
@@ -53,6 +51,7 @@ public class CategoriaImpl implements Categoria{
 		this.grupo = grupo;
 	}
 
+	//@Override
 	public int getMinMilis() {
 		return minMilis;
 	}
@@ -61,6 +60,7 @@ public class CategoriaImpl implements Categoria{
 		this.minMilis = minMilis;
 	}
 
+	//@Override
 	public int getMaxMilis() {
 		return maxMilis;
 	}

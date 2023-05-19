@@ -8,15 +8,15 @@ public interface Categoria {
 
 	String getCategoria();
 
-	void setCategoria(String categoria);
-
 	String getDescripcion();
-
-	void setDescripcion(String descripcion);
 
 	TipoGrupo getGrupo();
 
 	List<Material> getMateriales();
+	
+	int getMinMilis();
+	
+	int getMaxMilis();
 
 
 
