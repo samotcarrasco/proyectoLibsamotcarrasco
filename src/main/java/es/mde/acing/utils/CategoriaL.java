@@ -14,7 +14,7 @@ import jakarta.validation.constraints.NotNull;
 
 
 
-public class CategoriaL {
+public class CategoriaL implements ICategoria{
 	
 	public static enum TipoGrupo {
 		Informatica,

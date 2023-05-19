@@ -23,7 +23,7 @@ public class MaterialL{
 	
 	public DepartamentoL dptoAdquisicion;
 	
-	public CategoriaL categoria;
+	public ICategoria categoria;
 	
 	private String descripcion;
 	private String dimensiones;
@@ -59,7 +59,7 @@ public class MaterialL{
 		this.dptoAdquisicion = dptoAdquisicion;
 	}
 
-	public CategoriaL getCategoria() {
+	public ICategoria getCategoria() {
 		return categoria;
 	}
 	public void setCategoria(CategoriaL categoria) {
