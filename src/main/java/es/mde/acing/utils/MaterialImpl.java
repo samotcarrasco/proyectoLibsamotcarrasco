@@ -1,12 +1,8 @@
 package es.mde.acing.utils;
 import java.time.LocalDate;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
-public class MaterialL implements IMaterial{
-	private static final long serrialVersionUID = 1L;
+public class MaterialImpl implements Material{
 	public static enum TipoMaterial {
 		Inventariable,
 	    noInventariable	
@@ -19,11 +15,11 @@ public class MaterialL implements IMaterial{
 	
 	private String nombre;
 	
-	public IDepartamento dptoOferta;
+	public Departamento dptoOferta;
 	
-	public IDepartamento dptoAdquisicion;
+	public Departamento dptoAdquisicion;
 	
-	public ICategoria categoria;
+	public Categoria categoria;
 	
 	private String descripcion;
 	private String dimensiones;
@@ -38,6 +34,7 @@ public class MaterialL implements IMaterial{
      	 
     	 
 
+	@Override
 	public String getNombre() {
 		return nombre;
 	}
@@ -45,27 +42,31 @@ public class MaterialL implements IMaterial{
 		this.nombre = nombre;
 	}
 
-	public IDepartamento getDeptoOferta() {
+	@Override
+	public Departamento getDeptoOferta() {
 		return dptoOferta;
 	}
-	public void setDeptoOferta(DepartamentoL deptoOferta) {
+	public void setDeptoOferta(Departamento deptoOferta) {
 		this.dptoOferta = deptoOferta;
 	}
 
-	public IDepartamento getDptoAdquisicion() {
+	@Override
+	public Departamento getDptoAdquisicion() {
 		return dptoAdquisicion;
 	}
-	public void setDptoAdquisicion(IDepartamento dptoAdquisicion) {
+	public void setDptoAdquisicion(Departamento dptoAdquisicion) {
 		this.dptoAdquisicion = dptoAdquisicion;
 	}
 
-	public ICategoria getCategoria() {
+	@Override
+	public Categoria getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(ICategoria categoria) {
+	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}
@@ -74,6 +75,7 @@ public class MaterialL implements IMaterial{
 		this.descripcion = descripcion;
 	}
 
+	@Override
 	public String getDimensiones() {
 		return dimensiones;
 	}
@@ -81,6 +83,7 @@ public class MaterialL implements IMaterial{
 		this.dimensiones = dimensiones;
 	}
 
+	@Override
 	public String getPeso() {
 		return peso;
 	}
@@ -88,6 +91,7 @@ public class MaterialL implements IMaterial{
 		this.peso = peso;
 	}
 
+	@Override
 	public EstadoMaterial getEstado() {
 		return estado;
 	}
@@ -95,10 +99,12 @@ public class MaterialL implements IMaterial{
 		this.estado = estado;
 	}
 	
+	@Override
 	public TipoMaterial getTipoMaterial() {
 		return null;
 	}
 
+	@Override
 	public LocalDate getFechaAdquisicion() {
 		return fechaAdquisicion;
 	}
@@ -106,6 +112,7 @@ public class MaterialL implements IMaterial{
 		this.fechaAdquisicion = fechaAdquisicion;
 	}
 
+	@Override
 	public LocalDate getFechaOferta() {
 		return fechaOferta;
 	}
@@ -113,13 +120,15 @@ public class MaterialL implements IMaterial{
 		this.fechaOferta = fechaOferta;
 	}
 
+	@Override
 	public String getImagen() {
 		return imagen;
 	}
-	public void setImagen(String imagen) {
+	public void setmagen(String imagen) {
 		this.imagen = imagen;
 	}
 
+	@Override
 	public int getMilis() {
 		return milis;
 	}
@@ -127,6 +136,7 @@ public class MaterialL implements IMaterial{
 		this.milis = milis;
 	}
 
+	@Override
 	public int getCantidad() {
 		return cantidad;
 	}
@@ -137,7 +147,7 @@ public class MaterialL implements IMaterial{
 
 	@Override
 	public String toString() {
-		return "MATERIAL [Nombre=" + getNombre() +"]";
+		return "MATERAL [Nombre=" + getNombre() +"]";
 	}
 	
 		

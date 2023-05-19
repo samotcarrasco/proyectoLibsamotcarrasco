@@ -2,7 +2,7 @@ package es.mde.acing.utils;
 
 
 
-public class InventariableL extends MaterialL implements esInventariable {
+public class Inventariable extends MaterialImpl implements esInventariable {
 	
 	private String noc;
     private String numeroSerie;

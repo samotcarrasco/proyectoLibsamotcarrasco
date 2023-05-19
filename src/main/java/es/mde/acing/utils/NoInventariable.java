@@ -4,7 +4,7 @@ package es.mde.acing.utils;
 import jakarta.validation.constraints.NotBlank;
 
 
-public class NoInventariableL extends MaterialL implements esNoInvetnariable {
+public class NoInventariable extends MaterialImpl implements esNoInvetnariable {
 	
 	private int bonificacion;
     

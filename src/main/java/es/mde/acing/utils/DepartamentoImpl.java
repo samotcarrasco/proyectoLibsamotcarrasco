@@ -15,7 +15,7 @@ import jakarta.validation.constraints.NotNull;
 
 
 
-public class DepartamentoL implements IDepartamento {
+public class DepartamentoImpl implements Departamento {
 	
 	public static enum TipoAcuartelamiento {
 		ACING
@@ -27,9 +27,9 @@ public class DepartamentoL implements IDepartamento {
 		Oficial
 	}
 	
-	public List<IMaterial> materialesOfertados;	
+	public List<Material> materialesOfertados;	
 	
-	public List<IMaterial> materialesAdquiridos;
+	public List<Material> materialesAdquiridos;
 	
 	private String nombre;
 	private String abreviatura;
@@ -47,22 +47,25 @@ public class DepartamentoL implements IDepartamento {
 		
 
 
-	public List<IMaterial> getMaterialesOfertados() {
+	@Override
+	public List<Material> getMaterialesOfertados() {
 		return materialesOfertados;
 	}
 
-	public void setMaterialesOfertados(List<IMaterial> materialesOfertados) {
+	public void setMaterialesOfertados(List<Material> materialesOfertados) {
 		this.materialesOfertados = materialesOfertados;
 	}
 
-	public List<IMaterial> getMaterialesAdquiridos() {
+	@Override
+	public List<Material> getMaterialesAdquiridos() {
 		return materialesAdquiridos;
 	}
 
-	public void setMaterialesAdquiridos(List<IMaterial> materialesAdquiridos) {
+	public void setMaterialesAdquiridos(List<Material> materialesAdquiridos) {
 		this.materialesAdquiridos = materialesAdquiridos;
 	}
 
+	@Override
 	public String getNombre() {
 		return nombre;
 	}
@@ -71,6 +74,7 @@ public class DepartamentoL implements IDepartamento {
 		this.nombre = nombre;
 	}
 
+	@Override
 	public String getAbreviatura() {
 		return abreviatura;
 	}
@@ -79,6 +83,7 @@ public class DepartamentoL implements IDepartamento {
 		this.abreviatura = abreviatura;
 	}
 
+	@Override
 	public TipoAcuartelamiento getAcuartelamiento() {
 		return acuartelamiento;
 	}
@@ -87,6 +92,7 @@ public class DepartamentoL implements IDepartamento {
 		this.acuartelamiento = acuartelamiento;
 	}
 
+	@Override
 	public String getEmail() {
 		return email;
 	}
@@ -95,6 +101,7 @@ public class DepartamentoL implements IDepartamento {
 		this.email = email;
 	}
 
+	@Override
 	public int getCredito() {
 		return credito;
 	}
@@ -103,6 +110,7 @@ public class DepartamentoL implements IDepartamento {
 		this.credito = credito;
 	}
 
+	@Override
 	public TipoEmpleo getResponsableEmpleo() {
 		return responsableEmpleo;
 	}
@@ -111,6 +119,7 @@ public class DepartamentoL implements IDepartamento {
 		this.responsableEmpleo = responsableEmpleo;
 	}
 
+	@Override
 	public String getResponsableNombre() {
 		return responsableNombre;
 	}
@@ -119,6 +128,7 @@ public class DepartamentoL implements IDepartamento {
 		this.responsableNombre = responsableNombre;
 	}
 
+	@Override
 	public String getTelefono() {
 		return telefono;
 	}
@@ -133,14 +143,17 @@ public class DepartamentoL implements IDepartamento {
 	}
 	
 
+	@Override
 	public String getDireccion() {
 		return direccion;
 	}
 
+	@Override
 	public String getLatitud() {
 		return latitud;
 	}
 
+	@Override
 	public String getLongitud() {
 		return longitud;
 	}

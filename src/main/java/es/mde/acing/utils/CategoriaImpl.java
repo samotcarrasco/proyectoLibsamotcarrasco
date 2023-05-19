@@ -14,7 +14,7 @@ import jakarta.validation.constraints.NotNull;
 
 
 
-public class CategoriaL implements ICategoria{
+public class CategoriaImpl implements Categoria{
 	
 	public static enum TipoGrupo {
 		Informatica,
@@ -24,7 +24,7 @@ public class CategoriaL implements ICategoria{
 	    Otros
 	}
 	
-	public List<IMaterial> materiales;	
+	public List<Material> materiales;	
 	
 	private String categoria;
 	private String descripcion;
@@ -33,22 +33,27 @@ public class CategoriaL implements ICategoria{
 	private int maxMilis;
 
 	
+	@Override
 	public String getCategoria() {
 		return categoria;
 	}
 
+	@Override
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}
 
+	@Override
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
 
+	@Override
 	public TipoGrupo getGrupo() {
 		return grupo;
 	}
@@ -73,23 +78,22 @@ public class CategoriaL implements ICategoria{
 		this.maxMilis = maxMilis;
 	}
 
-	public void setMateriales(List<IMaterial> materiales) {
+	public void setMateriales(List<Material> materiales) {
 		this.materiales = materiales;
 	}
 
 
-	public List<IMaterial> getMateriales() {
+	public List<Material> getMateriales() {
 		return materiales;
 	}
 
-	public void setPreguntas(List<IMaterial> materiales) {
-		this.materiales = materiales;
-	}
 	
 
-	@Override
+
 	public String toString() {
 		return "Categoria nombre" + getCategoria() + "]";
 	}
-	
+
+
+
 }
