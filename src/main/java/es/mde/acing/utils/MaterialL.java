@@ -19,11 +19,11 @@ public class MaterialL{
 	
 	private String nombre;
 	
-	private DepartamentoL dptoOferta;
+	public DepartamentoL dptoOferta;
 	
-	private DepartamentoL dptoAdquisicion;
+	public DepartamentoL dptoAdquisicion;
 	
-	private CategoriaL categoria;
+	public CategoriaL categoria;
 	
 	private String descripcion;
 	private String dimensiones;

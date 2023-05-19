@@ -24,7 +24,7 @@ public class CategoriaL {
 	    Otros
 	}
 	
-	private List<MaterialL> materiales;	
+	public List<MaterialL> materiales;	
 	
 	private String categoria;
 	private String descripcion;

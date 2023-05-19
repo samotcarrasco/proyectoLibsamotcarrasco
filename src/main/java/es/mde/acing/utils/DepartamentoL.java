@@ -27,9 +27,9 @@ public class DepartamentoL {
 		Oficial
 	}
 	
-	private List<MaterialL> materialesOfertados;	
+	public List<MaterialL> materialesOfertados;	
 	
-	private List<MaterialL> materialesAdquiridos;
+	public List<MaterialL> materialesAdquiridos;
 	
 	private String nombre;
 	private String abreviatura;
