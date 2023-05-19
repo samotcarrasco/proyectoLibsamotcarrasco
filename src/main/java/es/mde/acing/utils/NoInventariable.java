@@ -1,7 +1,6 @@
 package es.mde.acing.utils;
 
 
-import jakarta.validation.constraints.NotBlank;
 
 
 public class NoInventariable extends MaterialImpl implements esNoInvetnariable {

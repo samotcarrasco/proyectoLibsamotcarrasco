@@ -1,7 +1,7 @@
 package es.mde.acing;
 
 
-public class ProyectoLibsamotcarrascoApplication {
+public class ProyectoLibTruequet {
 
 	public static void main(String[] args) {
 	}
