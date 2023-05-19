@@ -27,9 +27,9 @@ public class DepartamentoL implements IDepartamento {
 		Oficial
 	}
 	
-	public List<MaterialL> materialesOfertados;	
+	public List<IMaterial> materialesOfertados;	
 	
-	public List<MaterialL> materialesAdquiridos;
+	public List<IMaterial> materialesAdquiridos;
 	
 	private String nombre;
 	private String abreviatura;
@@ -47,19 +47,19 @@ public class DepartamentoL implements IDepartamento {
 		
 
 
-	public List<MaterialL> getMaterialesOfertados() {
+	public List<IMaterial> getMaterialesOfertados() {
 		return materialesOfertados;
 	}
 
-	public void setMaterialesOfertados(List<MaterialL> materialesOfertados) {
+	public void setMaterialesOfertados(List<IMaterial> materialesOfertados) {
 		this.materialesOfertados = materialesOfertados;
 	}
 
-	public List<MaterialL> getMaterialesAdquiridos() {
+	public List<IMaterial> getMaterialesAdquiridos() {
 		return materialesAdquiridos;
 	}
 
-	public void setMaterialesAdquiridos(List<MaterialL> materialesAdquiridos) {
+	public void setMaterialesAdquiridos(List<IMaterial> materialesAdquiridos) {
 		this.materialesAdquiridos = materialesAdquiridos;
 	}
 

@@ -24,7 +24,7 @@ public class CategoriaL implements ICategoria{
 	    Otros
 	}
 	
-	public List<MaterialL> materiales;	
+	public List<IMaterial> materiales;	
 	
 	private String categoria;
 	private String descripcion;
@@ -73,16 +73,16 @@ public class CategoriaL implements ICategoria{
 		this.maxMilis = maxMilis;
 	}
 
-	public void setMateriales(List<MaterialL> materiales) {
+	public void setMateriales(List<IMaterial> materiales) {
 		this.materiales = materiales;
 	}
 
 
-	public List<MaterialL> getMateriales() {
+	public List<IMaterial> getMateriales() {
 		return materiales;
 	}
 
-	public void setPreguntas(List<MaterialL> materiales) {
+	public void setPreguntas(List<IMaterial> materiales) {
 		this.materiales = materiales;
 	}
 	

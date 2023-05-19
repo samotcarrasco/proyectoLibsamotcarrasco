@@ -19,9 +19,9 @@ public class MaterialL implements IMaterial{
 	
 	private String nombre;
 	
-	public DepartamentoL dptoOferta;
+	public IDepartamento dptoOferta;
 	
-	public DepartamentoL dptoAdquisicion;
+	public IDepartamento dptoAdquisicion;
 	
 	public ICategoria categoria;
 	
@@ -45,24 +45,24 @@ public class MaterialL implements IMaterial{
 		this.nombre = nombre;
 	}
 
-	public DepartamentoL getDeptoOferta() {
+	public IDepartamento getDeptoOferta() {
 		return dptoOferta;
 	}
 	public void setDeptoOferta(DepartamentoL deptoOferta) {
 		this.dptoOferta = deptoOferta;
 	}
 
-	public DepartamentoL getDptoAdquisicion() {
+	public IDepartamento getDptoAdquisicion() {
 		return dptoAdquisicion;
 	}
-	public void setDptoAdquisicion(DepartamentoL dptoAdquisicion) {
+	public void setDptoAdquisicion(IDepartamento dptoAdquisicion) {
 		this.dptoAdquisicion = dptoAdquisicion;
 	}
 
 	public ICategoria getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(CategoriaL categoria) {
+	public void setCategoria(ICategoria categoria) {
 		this.categoria = categoria;
 	}
 
