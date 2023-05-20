@@ -128,10 +128,6 @@ public class DepartamentoImpl implements Departamento {
 	}
 
 
-	public void aumentarCredito(int cantidad) {
-	    credito += cantidad;
-	}
-	
 
 	@Override
 	public String getDireccion() {
