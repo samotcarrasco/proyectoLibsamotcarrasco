@@ -19,7 +19,7 @@ public class MaterialImpl implements Material{
 	
 	public Departamento dptoAdquisicion;
 	
-	public CategoriaImpl categoria;
+	public Categoria categoria;
 	
 	private String descripcion;
 	private String dimensiones;
@@ -59,10 +59,10 @@ public class MaterialImpl implements Material{
 	}
 
 	@Override
-	public CategoriaImpl getCategoria() {
+	public Categoria getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(CategoriaImpl categoria) {
+	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
 
