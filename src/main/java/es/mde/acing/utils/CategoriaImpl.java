@@ -5,7 +5,7 @@ import java.util.List;
 
 
 
-public class CategoriaImpl {
+public class CategoriaImpl implements Categoria{
 	
 	public static enum TipoGrupo {
 		Informatica,
