@@ -32,7 +32,7 @@ public class MaterialImpl implements Material{
 	private int cantidad;
 	
      	 
-    	 
+    public MaterialImpl() {} 	 
 
 	@Override
 	public String getNombre() {

@@ -34,7 +34,7 @@ public class DepartamentoImpl implements Departamento {
 	private String longitud;
     
 	
-		
+   public DepartamentoImpl() {}
 
 
 	@Override

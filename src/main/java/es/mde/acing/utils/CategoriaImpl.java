@@ -26,6 +26,7 @@ public class CategoriaImpl implements Categoria{
 	private int minMilis;
 	private int maxMilis;
 
+	public CategoriaImpl() {}
 	
 	////@Override
 	public String getCategoria() {
