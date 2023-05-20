@@ -13,7 +13,7 @@ public interface Material {
 
 	Departamento getDptoAdquisicion();
 
-	Categoria getCategoria();
+	CategoriaImpl getCategoria();
 
 	String getDescripcion();
 
