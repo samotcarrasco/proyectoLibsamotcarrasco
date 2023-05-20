@@ -2,7 +2,7 @@ package es.mde.acing.utils;
 import java.time.LocalDate;
 
 
-public class MaterialImpl implements Material{
+public abstract class MaterialImpl implements Material{
 	public static enum TipoMaterial {
 		Inventariable,
 	    noInventariable	
