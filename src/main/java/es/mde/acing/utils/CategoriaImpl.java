@@ -1,6 +1,8 @@
 package es.mde.acing.utils;
 
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -15,7 +17,8 @@ public class CategoriaImpl implements Categoria{
 	    Otros
 	}
 	
-	public List<Material> materiales;	
+	//public List<Material> materiales;	
+	public Collection<Material> materiales = new ArrayList<>();
 	
 	private String categoria;
 	private String descripcion;
@@ -74,7 +77,12 @@ public class CategoriaImpl implements Categoria{
 	}
 
 
-	public List<Material> getMateriales() {
+//	public List<Material> getMateriales() {
+//		return materiales;
+//	}
+	
+	@Override
+	public Collection<Material> getMateriales() {
 		return materiales;
 	}
 
