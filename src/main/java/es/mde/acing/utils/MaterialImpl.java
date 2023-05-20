@@ -2,7 +2,7 @@ package es.mde.acing.utils;
 import java.time.LocalDate;
 
 
-public class MaterialImpl<T extends Departamento> implements Material<T>{
+public class MaterialImpl implements Material{
 	public static enum TipoMaterial {
 		Inventariable,
 	    noInventariable	
@@ -14,14 +14,9 @@ public class MaterialImpl<T extends Departamento> implements Material<T>{
 	}
 	
 	private String nombre;
-	
-	public T dptoOferta;
-	
-	public T dptoAdquisicion;
-
-	
-	public Categoria categoria;
-	
+	private Departamento dptoOferta;
+	private Departamento dptoAdquisicion;
+	private Categoria categoria;
 	private String descripcion;
 	private String dimensiones;
 	private String peso;
@@ -33,10 +28,6 @@ public class MaterialImpl<T extends Departamento> implements Material<T>{
 	private int cantidad;
 	
 	
-	
-     	 
-//    	public MaterialImpl() {} 	 
-
 	@Override
 	public String getNombre() {
 		return nombre;
@@ -46,18 +37,18 @@ public class MaterialImpl<T extends Departamento> implements Material<T>{
 	}
 
 	@Override
-	public T getDeptoOferta() {
+	public Departamento getDeptoOferta() {
 		return dptoOferta;
 	}
-	public void setDeptoOferta(T deptoOferta) {
+	public void setDeptoOferta(Departamento deptoOferta) {
 		this.dptoOferta = deptoOferta;
 	}
 
 	@Override
-	public T getDptoAdquisicion() {
+	public Departamento getDptoAdquisicion() {
 		return dptoAdquisicion;
 	}
-	public void setDptoAdquisicion(T dptoAdquisicion) {
+	public void setDptoAdquisicion(Departamento dptoAdquisicion) {
 		this.dptoAdquisicion = dptoAdquisicion;
 	}
 

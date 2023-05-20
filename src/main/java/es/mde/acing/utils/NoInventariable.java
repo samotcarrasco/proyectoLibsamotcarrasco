@@ -1,8 +1,6 @@
 package es.mde.acing.utils;
 
 
-
-
 public class NoInventariable extends MaterialImpl implements esNoInvetnariable {
 	
 	private int bonificacion;

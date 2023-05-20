@@ -1,6 +1,5 @@
 package es.mde.acing.utils;
 
-import java.util.Collection;
 import java.util.List;
 
 import es.mde.acing.utils.CategoriaImpl.TipoGrupo;
@@ -13,7 +12,7 @@ public interface Categoria {
 
 	TipoGrupo getGrupo();
 
-	Collection<Material> getMateriales();
+	List<Material> getMateriales();
 	
 	int getMinMilis();
 	

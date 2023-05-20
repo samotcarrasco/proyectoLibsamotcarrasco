@@ -5,13 +5,13 @@ import java.time.LocalDate;
 import es.mde.acing.utils.MaterialImpl.EstadoMaterial;
 import es.mde.acing.utils.MaterialImpl.TipoMaterial;
 
-public interface Material<T extends Departamento> {
+public interface Material {
 
 	String getNombre();
 
 	Departamento getDeptoOferta();
 
-	T getDptoAdquisicion();
+	Departamento getDptoAdquisicion();
 
 	Categoria getCategoria();
 
