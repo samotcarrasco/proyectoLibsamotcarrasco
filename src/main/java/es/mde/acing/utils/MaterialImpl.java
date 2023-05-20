@@ -15,9 +15,10 @@ public class MaterialImpl implements Material{
 	
 	private String nombre;
 	
-	public Departamento dptoOferta;
+	public DepartamentoImpl dptoOferta;
 	
 	public DepartamentoImpl dptoAdquisicion;
+
 	
 	public Categoria categoria;
 	
@@ -31,8 +32,10 @@ public class MaterialImpl implements Material{
 	private int milis;
 	private int cantidad;
 	
+	
+	
      	 
-    public MaterialImpl() {} 	 
+//    	public MaterialImpl() {} 	 
 
 	@Override
 	public String getNombre() {
@@ -43,10 +46,10 @@ public class MaterialImpl implements Material{
 	}
 
 	@Override
-	public Departamento getDeptoOferta() {
+	public DepartamentoImpl getDeptoOferta() {
 		return dptoOferta;
 	}
-	public void setDeptoOferta(Departamento deptoOferta) {
+	public void setDeptoOferta(DepartamentoImpl deptoOferta) {
 		this.dptoOferta = deptoOferta;
 	}
 
