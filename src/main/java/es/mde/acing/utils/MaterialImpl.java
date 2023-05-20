@@ -17,7 +17,7 @@ public class MaterialImpl implements Material{
 	
 	public Departamento dptoOferta;
 	
-	public Departamento dptoAdquisicion;
+	public DepartamentoImpl dptoAdquisicion;
 	
 	public Categoria categoria;
 	
@@ -51,10 +51,10 @@ public class MaterialImpl implements Material{
 	}
 
 	@Override
-	public Departamento getDptoAdquisicion() {
+	public DepartamentoImpl getDptoAdquisicion() {
 		return dptoAdquisicion;
 	}
-	public void setDptoAdquisicion(Departamento dptoAdquisicion) {
+	public void setDptoAdquisicion(DepartamentoImpl dptoAdquisicion) {
 		this.dptoAdquisicion = dptoAdquisicion;
 	}
 
