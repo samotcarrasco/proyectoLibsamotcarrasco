@@ -2,7 +2,7 @@ package es.mde.acing.utils;
 import java.time.LocalDate;
 
 
-public class MaterialImpl implements Material{
+public class MaterialImpl<T extends Departamento> implements Material<T>{
 	public static enum TipoMaterial {
 		Inventariable,
 	    noInventariable	
@@ -15,9 +15,9 @@ public class MaterialImpl implements Material{
 	
 	private String nombre;
 	
-	public DepartamentoImpl dptoOferta;
+	public T dptoOferta;
 	
-	public DepartamentoImpl dptoAdquisicion;
+	public T dptoAdquisicion;
 
 	
 	public Categoria categoria;
