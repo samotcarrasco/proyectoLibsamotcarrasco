@@ -46,18 +46,18 @@ public class MaterialImpl<T extends Departamento> implements Material<T>{
 	}
 
 	@Override
-	public DepartamentoImpl getDeptoOferta() {
+	public T getDeptoOferta() {
 		return dptoOferta;
 	}
-	public void setDeptoOferta(DepartamentoImpl deptoOferta) {
+	public void setDeptoOferta(T deptoOferta) {
 		this.dptoOferta = deptoOferta;
 	}
 
 	@Override
-	public DepartamentoImpl getDptoAdquisicion() {
+	public T getDptoAdquisicion() {
 		return dptoAdquisicion;
 	}
-	public void setDptoAdquisicion(DepartamentoImpl dptoAdquisicion) {
+	public void setDptoAdquisicion(T dptoAdquisicion) {
 		this.dptoAdquisicion = dptoAdquisicion;
 	}
 
