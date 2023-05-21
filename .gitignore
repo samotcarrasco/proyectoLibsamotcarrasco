@@ -36,6 +36,7 @@ out/
 ### VS Code ###
 .vscode/
 
-
-
 .metadata/
+assets/
+new_diagram.uxf
+
